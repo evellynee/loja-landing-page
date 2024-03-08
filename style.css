@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', 'sans-serif';
+}
+
+.container {
+    max-width: 1024px;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+}
+
+header {
+    background-color: cornflowerblue;
+    margin-bottom: 56px;
+    padding: 8px 0;
+    align-items: center;
+    color: #fff;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 16px;
+    font-weight: bold;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about img {
+    width: 400px;
+    margin-right: 24px;
+    border-radius: 10px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+h2 {
+    margin-bottom: 16px;
+    color: cornflowerblue;
+    border-bottom: 2px solid cornflowerblue;
+}
+
+.produto a {
+    text-decoration: none;
+}
+
+.produto img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 16px;
+}
+
+section h2 {
+    margin-bottom: 32px;
+}
+
+.produtos-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 23.6%);
+    column-gap: 1%;
+    row-gap: 5%; 
+    text-align: center;
+    padding: 0 0 0 10em;
+    width: 90%;
+}
+
+.produto h3 {
+    color: black;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.produto h3:hover {
+    border-bottom: 1px solid black;
+}
+
+.price {
+    margin-bottom: 16px;
+}
+
+button {
+    width: 150px;
+    background-color: cornflowerblue;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    justify-content: center;
+    padding: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+footer {
+    background-color: cornflowerblue;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px;
+    text-align: center;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    
+    .container{
+        max-width: 90%;
+        display: block;
+    }
+
+    
+    #about img {
+        margin-bottom: 16px;
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .produtos-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 49.3%);
+        align-items: center;
+        justify-content: center;
+        padding-left: 2.5em;
+    }
+
+    button {
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container{
+        max-width: 90%;
+        display: block;
+    }
+
+    
+    #about img {
+        margin-bottom: 16px;
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .produtos-2 {
+        display: block;
+        padding-left: 2em;
+    }
+
+    button {
+        margin-bottom: 16px;
+    }
+}
